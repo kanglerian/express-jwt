@@ -1,0 +1,32 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsInVzZXJVc2VybmFtZSI6InNvcHlhbiIsInVzZXJFbWFpbCI6InNvcHlhbnNhdXJpQGdtYWlsLmNvbSIsImlhdCI6MTY2MjI4MDE0MywiZXhwIjoxNjYyMjgwMTU4fQ.lV_ptXuvgeCsZ9LwDkQhHQNGu4Peg96BiG3nLBjb3Mg
+
+###
+
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "username": "sopyan",
+    "email": "sopyan@gmail.com",
+    "password": "didah123",
+    "confPassword": "didah123"
+}
+
+###
+
+POST http://localhost:5000/
+Content-Type: application/json
+
+{
+    "email": "sopyansauri@gmail.com",
+    "password": "didah123"
+}
+
+###
+
+GET http://localhost:5000/token
+
+###
+
+DELETE http://localhost:5000/logout
