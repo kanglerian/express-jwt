@@ -12,7 +12,7 @@ let logout = require('./routes/logout');
 
 let app = express();
 
-app.use(cors({ credentials: true, origin: 'http://localhost:3000' }));
+app.use(cors({ origin: 'http://localhost:3000' }));
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
